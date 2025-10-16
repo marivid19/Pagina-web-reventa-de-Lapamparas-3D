@@ -1,4 +1,4 @@
-// ===== CONFIGURACIÓN Y DATOS =====
+// ===== SITE_CONFIGURACIÓN Y DATOS =====
 
 // Base de datos de productos (puedes expandir esto)
 const PRODUCTS = [
@@ -274,7 +274,7 @@ function updateOrderSummary() {
     }
 }
 
-// ===== CONFIGURACIÓN DE FORMULARIOS =====
+// ===== SITE_CONFIGURACIÓN DE FORMULARIOS =====
 function setupForms() {
     setupOrderForm();
     setupContactForm();
@@ -427,7 +427,7 @@ function openPaymentModal() {
         amountSpan.textContent = `$${currentOrder.deposit.toLocaleString('es-AR')}`;
     }
 
-    // Configurar link de Mercado Pago
+    // SITE_CONFIGurar link de Mercado Pago
     if (mercadopagoLink) {
         // Aquí deberías generar un link real de Mercado Pago
         // Por ahora usamos un placeholder
@@ -450,7 +450,7 @@ function generateMercadoPagoLink() {
         email: currentOrder.customer.email
     });
     
-    return `${CONFIG.mercadopago.baseUrl}?${params.toString()}`;
+    return `${SITE_CONFIG.mercadopago.baseUrl}?${params.toString()}`;
 }
 
 // ===== SCROLL SUAVE =====
@@ -570,7 +570,7 @@ function debounce(func, wait) {
 
 // Función para enviar datos a Google Sheets (opcional)
 async function sendToGoogleSheets(data) {
-    // Esta función requeriría configuración adicional
+    // Esta función requeriría SITE_CONFIGuración adicional
     // Puedes usar Google Apps Script o una API personalizada
     console.log('Enviando a Google Sheets:', data);
     
@@ -623,11 +623,11 @@ async function sendEmail(data) {
     */
 }
 
-// ===== CONFIGURACIÓN DE DESARROLLO =====
+// ===== SITE_CONFIGURACIÓN DE DESARROLLO =====
 if (typeof window !== 'undefined') {
     // Exponer funciones globales para debugging
     window.Lamparas3D = {
-        CONFIG,
+        SITE_CONFIG,
         PRODUCTS,
         currentOrder,
         selectedProduct,
