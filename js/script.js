@@ -66,10 +66,31 @@ let selectedProduct = null;
 document.addEventListener('DOMContentLoaded', function() {
     // ===== ACTUALIZAR INFORMACIÓN DE CONTACTO =====
 function updateContactInfo() {
-    // Actualizar WhatsApp
-    const whatsappLinks = document.querySelectorAll('[href*="wa.me"]');
-    whatsappLinks.forEach(link => {
-        link.href = `https://wa.me/${SITE_CONFIG.contact.whatsapp}`;
+    if (!SITE_CONFIG || !SITE_CONFIG.contact) {
+        console.log('SITE_CONFIG no está disponible');
+        return;
+    }
+    
+    console.log('Actualizando información de contacto...');
+    
+    // Solo actualizar los textos visibles
+    const contactItems = document.querySelectorAll('.contact-item p');
+    if (contactItems.length >= 3) {
+        initializeApp();
+        function initializeApp() {
+    setupNavigation();
+    loadProducts();
+    setupModals();
+    setupForms();
+    setupSmoothScrolling();
+    updateContactInfo(); // ← Esta línea llama a la función
+    console.log('✅ Aplicación inicializada correctamente');
+}
+        contactItems[0].textContent = SITE_CONFIG.contact.whatsapp;
+        contactItems[1].textContent = SITE_CONFIG.contact.instagram;
+        contactItems[2].textContent = SITE_CONFIG.contact.email;
+    }
+}
     });
     
     // Actualizar Instagram
