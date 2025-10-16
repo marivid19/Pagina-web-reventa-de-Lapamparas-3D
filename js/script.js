@@ -627,7 +627,7 @@ async function sendEmail(data) {
 if (typeof window !== 'undefined') {
     // Exponer funciones globales para debugging
     window.Lamparas3D = {
-        SITE_CONFIG,
+        SITE_CONFIG.contact.whatsapp,
         PRODUCTS,
         currentOrder,
         selectedProduct,
