@@ -4,7 +4,7 @@
 const SITE_CONFIG = {
     // Información básica del sitio
     site: {
-        name: 'Lámparas 3D Artesanales',
+        name: 'PIL 3D LAMPARAS',
         tagline: 'Diseños personalizados impresos a pedido',
         description: 'Transformamos tus ideas en lámparas únicas. Cada pieza es diseñada y fabricada especialmente para ti.',
         url: 'https://tu-dominio.com', // Cambiar por tu dominio real
@@ -34,7 +34,7 @@ const SITE_CONFIG = {
         
         // Otros métodos de pago (para futuras implementaciones)
         otherMethods: {
-            transferencia: false,
+            transferencia: true,
             efectivo: false,
             tarjeta: false
         }
@@ -119,7 +119,7 @@ const SITE_CONFIG = {
             'iluminacion artesanal',
             'lamparas unicas'
         ],
-        author: 'Tu Nombre',
+        author: 'Juan Bautista Fernandez',
         ogImage: 'assets/images/og-image.jpg' // Imagen para redes sociales
     },
 
@@ -196,5 +196,6 @@ if (typeof module !== 'undefined' && module.exports) {
         validateConfig
     };
 }
+
 
 
