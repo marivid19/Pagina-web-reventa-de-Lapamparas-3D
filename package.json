@@ -1,0 +1,36 @@
+{
+  "name": "lamparas-3d-artesanales",
+  "version": "1.0.0",
+  "description": "Página web para gestión de pedidos de lámparas 3D impresas a pedido",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx live-server --port=3000 --open=/",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "lamparas",
+    "3d",
+    "impresion",
+    "artesanal",
+    "ecommerce",
+    "pedidos",
+    "mercadopago"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/lamparas-3d-artesanales.git"
+  },
+  "homepage": "https://tu-usuario.github.io/lamparas-3d-artesanales",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
