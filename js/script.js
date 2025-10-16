@@ -64,6 +64,42 @@ let selectedProduct = null;
 
 // ===== INICIALIZACIÓN =====
 document.addEventListener('DOMContentLoaded', function() {
+    // ===== ACTUALIZAR INFORMACIÓN DE CONTACTO =====
+function updateContactInfo() {
+    // Actualizar WhatsApp
+    const whatsappLinks = document.querySelectorAll('[href*="wa.me"]');
+    whatsappLinks.forEach(link => {
+        link.href = `https://wa.me/${SITE_CONFIG.contact.whatsapp}`;
+    });
+    
+    // Actualizar Instagram
+    const instagramLinks = document.querySelectorAll('[href*="instagram.com"]');
+    instagramLinks.forEach(link => {
+        link.href = `https://instagram.com/${SITE_CONFIG.contact.instagram}`;
+    });
+    
+    // Actualizar Email
+    const emailLinks = document.querySelectorAll('[href*="mailto:"]');
+    emailLinks.forEach(link => {
+        link.href = `mailto:${SITE_CONFIG.contact.email}`;
+    });
+    
+    // Actualizar texto de contacto
+    const whatsappText = document.querySelector('.contact-item:nth-child(1) p');
+    if (whatsappText) {
+        whatsappText.textContent = SITE_CONFIG.contact.whatsapp;
+    }
+    
+    const instagramText = document.querySelector('.contact-item:nth-child(2) p');
+    if (instagramText) {
+        instagramText.textContent = SITE_CONFIG.contact.instagram;
+    }
+    
+    const emailText = document.querySelector('.contact-item:nth-child(3) p');
+    if (emailText) {
+        emailText.textContent = SITE_CONFIG.contact.email;
+    }
+}
     initializeApp();
 });
 
@@ -73,6 +109,7 @@ function initializeApp() {
     setupModals();
     setupForms();
     setupSmoothScrolling();
+    updateContactInfo(); // ← Agregar esta línea
     console.log('✅ Aplicación inicializada correctamente');
 }
 
