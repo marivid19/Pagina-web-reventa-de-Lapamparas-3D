@@ -626,7 +626,7 @@ async function sendEmail(data) {
 // ===== SITE_CONFIGURACIÓN DE DESARROLLO =====
 if (typeof window !== 'undefined') {
     // Exponer funciones globales para debugging
-  window.Lamparas3D = {
+ window.Lamparas3D = {
     CONFIG: SITE_CONFIG,
     PRODUCTS,
     currentOrder,
