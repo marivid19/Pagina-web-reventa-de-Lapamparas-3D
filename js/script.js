@@ -8,10 +8,12 @@ const CONFIG = {
     },
     
     // Configuración de contacto
-    contact: {
-        whatsapp: '+54 9 11 1234-5678',
-        instagram: '@lamparas3d_artesanales',
-        email: 'pedidos@lamparas3d.com'
+   contact: {
+        whatsapp: '+54 9 2954232772',
+        instagram: '@pil3d',
+        email: 'juanbf2009@gmail.com',
+        address: 'Santa Rosa, La Pampa, Argentina',
+        businessHours: 'Lunes a Viernes: 9:00 - 17:00'
     }
 };
 
