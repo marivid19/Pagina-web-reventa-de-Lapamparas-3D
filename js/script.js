@@ -1,21 +1,4 @@
 // ===== CONFIGURACIÓN Y DATOS =====
-const CONFIG = {
-    // Configuración de Mercado Pago (reemplazar con tus datos reales)
-    mercadopago: {
-        // Ejemplo de link - reemplazar con tu link real de Mercado Pago
-        baseUrl: 'https://mpago.la/',
-        // Puedes agregar más configuraciones aquí
-    },
-    
-    // Configuración de contacto
-   contact: {
-        whatsapp: '+54 9 2954232772',
-        instagram: '@pil3d',
-        email: 'juanbf2009@gmail.com',
-        address: 'Santa Rosa, La Pampa, Argentina',
-        businessHours: 'Lunes a Viernes: 9:00 - 17:00'
-    }
-};
 
 // Base de datos de productos (puedes expandir esto)
 const PRODUCTS = [
