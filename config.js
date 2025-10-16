@@ -13,11 +13,11 @@ const SITE_CONFIG = {
 
     // Información de contacto
     contact: {
-        whatsapp: '+54 9 11 1234-5678', // Cambiar por tu número real
-        instagram: '@lamparas3d_artesanales', // Cambiar por tu Instagram
-        email: 'pedidos@lamparas3d.com', // Cambiar por tu email real
-        address: 'Tu dirección, Ciudad, País', // Opcional
-        businessHours: 'Lunes a Viernes: 9:00 - 18:00' // Opcional
+        whatsapp: '+54 9 2954232772', // Cambiar por tu número real
+        instagram: '@pil3d', // Cambiar por tu Instagram
+        email: 'juanbf2009@gmail.com', // Cambiar por tu email real
+        address: 'Santa Rosa, La Pampa, Argentina', // Opcional
+        businessHours: 'Lunes a Viernes: 9:00 - 17:00' // Opcional
     },
 
     // Configuración de pagos
@@ -25,7 +25,7 @@ const SITE_CONFIG = {
         // Mercado Pago
         mercadopago: {
             enabled: true,
-            baseUrl: 'https://mpago.la/', // Cambiar por tu link real
+            baseUrl: 'https://mpago.la/piljuanbautista.mp', // Cambiar por tu link real
             // Para implementación completa, necesitarías:
             // accessToken: 'TU_ACCESS_TOKEN',
             // publicKey: 'TU_PUBLIC_KEY',
@@ -196,4 +196,5 @@ if (typeof module !== 'undefined' && module.exports) {
         validateConfig
     };
 }
+
 
