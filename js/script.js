@@ -109,6 +109,8 @@ function updateContactInfo() {
     const whatsappText = document.querySelector('.contact-item:nth-child(1) p');
     if (whatsappText) {
         whatsappText.textContent = SITE_CONFIG.contact.whatsapp;
+        updateContactInfo()
+        initializeApp()
     }
     
     const instagramText = document.querySelector('.contact-item:nth-child(2) p');
