@@ -627,14 +627,14 @@ async function sendEmail(data) {
 if (typeof window !== 'undefined') {
     // Exponer funciones globales para debugging
     window.Lamparas3D = {
-        SITE_CONFIG.contact.whatsapp,
-        PRODUCTS,
-        currentOrder,
-        selectedProduct,
-        showNotification,
-        openOrderModal,
-        openPaymentModal
-    };
+    CONFIG: SITE_CONFIG,
+    PRODUCTS,
+    currentOrder,
+    selectedProduct,
+    showNotification,
+    openOrderModal,
+    openPaymentModal
+};
     
     console.log('🔧 Modo desarrollo activado. Usa window.Lamparas3D para debugging.');
 }
